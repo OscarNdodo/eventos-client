@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+.text-shadow {
+	animation: fire 2s ease-in-out infinite alternate-reverse;
+}
+
+.bg-img {
+	font-size: 350px !important;
+}
+
+@keyframes fire {
+	0% {
+		text-shadow: 0 -5px 10px #e26e2b;
+	}
+
+	40% {
+		text-shadow: 0 -6px 20px #f36060;
+	}
+
+	100% {
+		text-shadow: 0 -8px 30px #f15f33;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	.login {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.bg-img {
+		font-size: 450px !important;
+	}
+}
