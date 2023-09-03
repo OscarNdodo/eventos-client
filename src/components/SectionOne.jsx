@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const image = "/src/assets/images/moon.svg";
+const image = "./src/assets/images/moon.svg";
 // const image = "./src/assets/images/bg1.jpg";
 
 const SectionOne = () => {
